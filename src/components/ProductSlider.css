@@ -1,0 +1,47 @@
+.product-slider-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Styling for individual product slides */
+  .product-slide {
+    text-align: center;
+  }
+  
+  /* Styling for product images */
+  .product-slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Make the image circular */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    width: 120px; /* Optional: Set a fixed width for the circular image
+  object-fit: cover;*/ /* Optional: Preserve aspect ratio of the image */
+  }
+  
+  /* Styling for product names displayed at the bottom */
+  .product-name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Styling for slick dots (pagination) */
+  .slick-dots {
+    li {
+      button {
+        &:before {
+          font-size: 12px;
+          color: #999;
+          opacity: 0.75;
+        }
+      }
+  
+      &.slick-active {
+        button:before {
+          color: #555;
+          opacity: 1;
+        }
+      }
+    }
+  }

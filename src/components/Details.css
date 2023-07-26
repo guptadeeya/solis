@@ -1,0 +1,56 @@
+.details{
+    /* background-color: palegreen; */
+    height: 80px;
+    width: 100%;
+}
+
+.list{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin-left: 30px; */
+    /* margin: 20px 40px; */
+    padding-left: 40%;
+}
+
+.list-item{
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 23px;
+    list-style: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+.list-item:hover{
+    color: rgb(41, 124, 41);
+}
+
+/* .hr{
+    color: rgb(199, 189, 189);
+    height: 0.2px;
+} */
+
+@media (max-width: 768px) {
+    .details{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0; /* Customize the background color as needed */
+      /* Add any other styles you want for the navbar in mobile view */
+    }
+
+    .list{
+        right: 20%;
+        left: 0;
+        padding-left: 0;
+        /* bottom: 0; */
+    }
+
+    .list-item{
+        font-size: 0.9rem;
+    }
+  }

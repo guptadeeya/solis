@@ -1,0 +1,8 @@
+.heading{
+    font-size: 70px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    left: 0;
+    /* color: #0c7040; */
+    background: linear-gradient(to bottom,#0c7040,#6a9b83 );
+}
