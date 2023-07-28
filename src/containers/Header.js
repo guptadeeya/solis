@@ -15,9 +15,8 @@ function Header() {
       </div>
 
       <div className="search">
-        <input className='search-input' type="text" placeholder='Search Items' />
+        <input className='search-input' type="text" placeholder='आइटम खोजें' />
         {/* searchIcon */}
-        {/* <FaSearch/> */}
         <FontAwesomeIcon className='search-icon' icon={faMagnifyingGlass} />
       </div>
 

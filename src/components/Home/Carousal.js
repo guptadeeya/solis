@@ -1,7 +1,7 @@
 import React from 'react'
 import first from '../../images/Carousal-1.png'
 import second from '../../images/Carousal-2.png'
-import '../css//Carousal.css'
+import '../css/Carousal.css'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
