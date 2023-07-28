@@ -1,0 +1,29 @@
+.carousal{
+    position: relative;
+    overflow: hidden;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    object-fit: cover;
+}
+.image{
+    overflow: hidden;
+}
+.image img{
+    object-fit: contain;
+    height: 500px;
+    width: 80%;
+}
+
+@media (max-width: 768px){
+.carousal{
+    padding: 0px;
+}
+.image img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+}

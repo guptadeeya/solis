@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Hide horizontal scrollbar, if any */
+  font-family: 'Abril Fatface', Arial, sans-serif;
 }
 
 .App-logo {

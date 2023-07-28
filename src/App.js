@@ -1,12 +1,10 @@
 import './App.css';
-import Navbar from './components/Navbar'
-import Header from './components/Header'
-import Details from './components/Details'
-import Items from './components/Items'
-import Carousal from './components/Carousal'
-import TopProducts from './components/TopProducts'
-// import ProductSlider from './components/ProductSlider'
-// import Nav from './components/Nav'
+import Navbar from './containers/Navbar'
+import Header from './containers/Header'
+import Details from './containers/Details'
+import Items from './components/Home/Items'
+import Carousal from './components/Home/Carousal'
+import Categories from './components/Home/Categories'
 
 function App() {
   return (
@@ -20,6 +18,7 @@ function App() {
 
       {/* Details */}
       <Details />
+
       {/* <Nav/> */}
 
       {/* Items-categories */}
@@ -27,9 +26,8 @@ function App() {
 
       {/* Carousal*/}
       <Carousal />
-      
-      {/* TopProducts*/}
-      <TopProducts />
+
+      <Categories />
 
 
 {/* ************************************************** */}

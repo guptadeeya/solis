@@ -1,0 +1,48 @@
+.details{
+    /* background-color: palegreen; */
+    height: 7%;
+    width: 100%;
+}
+
+.list{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.list-item{
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 20px;
+    list-style: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+.list-item:hover{
+    color: rgb(41, 124, 41);
+}
+
+@media (max-width: 768px) {
+    .details{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fcfcfc; /* Customize the background color as needed */
+      /* Add any other styles you want for the navbar in mobile view */
+    }
+
+    .list{
+        display: flex;
+        margin: 2%;
+        padding: 0;
+    }
+
+    .list-item{
+        font-size: 0.9rem;
+        color: green;
+    }
+  }
