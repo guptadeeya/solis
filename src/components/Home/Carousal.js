@@ -30,12 +30,12 @@ function Carousal() {
                 >
                 <SwiperSlide>
                     <div className="image">
-                    <img src={first} alt="" />
+                    <img src={second} alt="Slider-1" />
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="image">
-                    <img src={second} alt="" />
+                    <img src={first} alt="slider-2" />
                 </div>
                 </SwiperSlide>
                     </Swiper>  
