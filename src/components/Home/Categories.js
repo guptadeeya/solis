@@ -7,7 +7,7 @@ const Categories = () => {
 
     return (
       <div className="Categories-container">
-      <div className="Category-heading">Our Top Categories</div>
+      <div className="Category-heading">हमारी शीर्ष श्रेणियाँ</div>
         <div className="category-container">
           {categories.map((category, index) => (
             <CategoryCard key={index} name={category} />

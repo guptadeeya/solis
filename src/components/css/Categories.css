@@ -1,11 +1,13 @@
 .category-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    padding: 4%;
+    justify-content: space-between;
   }
 
 .Category-heading{
   font-size: 27px;
   color: green;
-  padding: 2%;
+  padding-top: 5%;
+  font-weight: bold;
 }
