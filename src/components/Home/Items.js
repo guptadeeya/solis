@@ -1,11 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../css/Items.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-// import img1 from '../images/img-1.png'
 import img2 from '../../images/img-2.png'
 import img3 from '../../images/img-3.png'
 import img4 from '../../images/img-4.png'
@@ -39,14 +39,16 @@ function Items() {
               spaceBetween: 60,
             },
           }}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
+        //   onSlideChange={() => console.log('slide change')}
+        //   onSwiper={(swiper) => console.log(swiper)}
         >
                     <SwiperSlide>
+                    <Link to="/shop">
                         <div className='one-box'>
                             <div className="img"> <img src={img2} alt="" /> </div>
                             <div className='name'>गंडेरी खाल</div>
                         </div>
+                        </Link>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='one-box'>
