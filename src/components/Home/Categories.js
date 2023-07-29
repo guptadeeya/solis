@@ -3,19 +3,20 @@ import CategoryCard from './CategoryCard';
 import '../css/Categories.css'
 
 const Categories = () => {
-    const categories = ['Category 1', 'Category 2', 'Category 3','Category 4','Category 5','Category 6','Category 7','Category 8'];
+    const categories = ['Solis 10000', 'Solis 3000', 'कच्ची बिनौला खल', 'सरसों खल'];
 
     return (
       <div className="Categories-container">
+      <div className="Categories-heading-row">
       <div className="Category-heading">हमारी शीर्ष श्रेणियाँ</div>
-      <div className="view-all">
-        <button className='btn-view'>सभी देखें</button>
+      <div className="view_all">सभी देखें</div>
       </div>
         <div className="category-container">
           {categories.map((category, index) => (
             <CategoryCard key={index} name={category} />
           ))}
         </div>
+        <div className="space"></div>
       </div>
     );
 };

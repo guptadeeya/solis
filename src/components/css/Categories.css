@@ -1,3 +1,7 @@
+.Categories-container{
+  padding-bottom: 10%;
+}
+
 .category-container {
     display: flex;
     flex-wrap: wrap;
@@ -8,29 +12,18 @@
 .Category-heading{
   font-size: 28px;
   color: green;
-  padding-top: 5%;
   font-weight: bold;
-  margin-top: 15px;
 }
 
-.view-all{
-  height: 22x;
-  width: 100%;
-  margin: 10px;
+.Categories-heading-row{
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 4%;
 }
 
-.btn-view{
-  padding: 13px;
-  border-radius: 12px;
-  height: 30px;
-  width: 25%;
-  font-size: 15px;
-  color: rgb(31, 82, 31);
-  font-weight: bold;
-  border: 1px solid darkgreen;
-}
-
-.btn-view:hover{
-  color: white;
-  background-color: darkgreen;
+.view_all{
+  cursor: pointer;
+  text-decoration: underline;
+  color: green;
+  padding-top: 2%;
 }
