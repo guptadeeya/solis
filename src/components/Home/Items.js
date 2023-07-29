@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../css/Items.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -43,10 +44,12 @@ function Items() {
           onSwiper={(swiper) => console.log(swiper)}
         >
                     <SwiperSlide>
+                    <Link to="/shop">
                         <div className='one-box'>
                             <div className="img"> <img src={img2} alt="" /> </div>
                             <div className='name'>गंडेरी खाल</div>
                         </div>
+                        </Link>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='one-box'>
