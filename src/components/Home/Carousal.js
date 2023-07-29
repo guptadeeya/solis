@@ -24,6 +24,7 @@ function Carousal() {
                 loop={true}
                 speed={1000}
                 pagination={{ clickable: true }}
+                autoplay={{ delay: 3000 }}
                 modules={[Pagination, Navigation, Autoplay]}   
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}

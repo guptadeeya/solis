@@ -12,3 +12,25 @@
   font-weight: bold;
   margin-top: 15px;
 }
+
+.view-all{
+  height: 22x;
+  width: 100%;
+  margin: 10px;
+}
+
+.btn-view{
+  padding: 13px;
+  border-radius: 12px;
+  height: 30px;
+  width: 25%;
+  font-size: 15px;
+  color: rgb(31, 82, 31);
+  font-weight: bold;
+  border: 1px solid darkgreen;
+}
+
+.btn-view:hover{
+  color: white;
+  background-color: darkgreen;
+}

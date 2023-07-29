@@ -15,7 +15,7 @@ import img7 from '../../images/img-2.png'
 import img8 from '../../images/img-8.png'
 import img9 from '../../images/img-9.png'
 import img10 from '../../images/img-10.png'
-import img11 from '../../images/Mpgrain.png'
+import img11 from '../../images/img-7.png'
 import img12 from '../../images/img-2.png'
 
 function Items() {
