@@ -1,65 +1,63 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .Shop {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-  }
-  
-  .category-list {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-  
-  .category {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* New styles for accordion */
-  .MuiAccordion-root {
-    background-image: linear-gradient(to bottom, #4caf50, #2196f3);
-    color: #fff;
-  }
-  
-  .MuiAccordionSummary-content {
-    align-items: center;
-    padding: 8px; /* Add padding between image and name */
-  }
-  
-  .MuiAccordionSummary-content .MuiAvatar-root {
-    margin-right: 12px; /* Add margin between image and name */
-  }
-  
-  .MuiAccordionSummary-expandIconWrapper {
-    margin-left: auto;
-  }
-  
-  .MuiAccordionDetails-root {
-    padding: 0;
-  }
-  
-  .MuiList-root {
-    width: 100%;
-    padding: 0;
-  }
-  
-  .MuiListItem-root {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  }
-  
-  .MuiListItemText-root {
-    margin-left: 16px;
-  }
-  
-  
+.Shop {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: green;
+}
+
+.category-list {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-bottom: 40px; /* Add margin to create space between accordion and details */
+  padding-bottom: 100px; /* Add bottom padding to create space for the fixed navbar while scrolling */
+}
+
+.category {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px; /* Add some padding to control the size of the accordion */
+}
+
+/* New styles for accordion */
+.MuiAccordion-root {
+  background-image: linear-gradient(to bottom, rgba(76, 175, 80, 0.8), rgba(33, 150, 243, 0.8)); /* Replace with the background image URL */
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.MuiAccordionSummary-content {
+  align-items: center;
+  padding: 8px;
+}
+
+.MuiAccordionSummary-content .MuiAvatar-root {
+  margin-right: 12px;
+}
+
+.MuiAccordionSummary-expandIconWrapper {
+  margin-left: auto;
+}
+
+.MuiAccordionDetails-root {
+  padding: 0;
+}
+
+.MuiList-root {
+  width: 100%;
+  padding: 0;
+}
+
+.MuiListItem-root {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.MuiListItemText-root {
+  margin-left: 16px;
+}

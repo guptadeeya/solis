@@ -43,6 +43,11 @@
     font-size: 22px;
     font-family: sans-serif;
     font-weight: bold;
+    text-decoration: none;
+}
+
+.no-underline{
+    text-decoration: none !important;
 }
 
 @media (max-width: 768px){
@@ -52,6 +57,11 @@
 
     .name{
         font-size: 14px;
+        color: green;
+    }
+
+    .no-underline{
+        text-decoration: none !important;
     }
 
 .swiper-button-prev,
