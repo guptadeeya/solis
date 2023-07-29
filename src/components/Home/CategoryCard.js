@@ -6,8 +6,8 @@ import img4 from '../../images/img-4.png'
 import img5 from '../../images/img-5.png'
 
 const categoryImages = {
-  'Solis 10000': img2,
-  'Solis 3000': img3,
+  'सोलिस 10000': img2,
+  'सोलिस 3000': img3,
   'कच्ची बिनौला खल': img4,
   'सरसों खल': img5,
   // Add more categories here

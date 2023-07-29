@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-route
 import "./App.css";
 import Shop from "./components/Shop/Shop";
 import Home from "./components/Home/Home";
-// import Shop from "./components/Shop/Shop";
 
 function App() {
 
@@ -16,11 +15,7 @@ function App() {
       </Routes>
     </Router>
     </div>
-    // <div className="App">
-    //   <Home />
-    //   {/* <Shop /> */}
-    // </div>
-  );
+  )
 }
 
 export default App;

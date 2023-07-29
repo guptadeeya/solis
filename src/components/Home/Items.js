@@ -59,61 +59,62 @@ function Items() {
                     <SwiperSlide>
                         <div className='one-box'>
                             <div className="img"><img src={img3} alt="" /></div>
-                            <div className='name'>Sarso Khal</div>
+                            <div className='name'>सरसो खल</div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='one-box'>
                             <div className="img"><img src={img4} alt="" /></div>
-                            <div className='name'>Other Khal</div>
+                            <div className='name'>अन्य खल</div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='one-box'>
                             <div className="img"><img src={img5} alt="" /></div>
-                            <div className='name'>Jadi Butiya</div>
+                            <div className='name'>जड़ बूटी</div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='one-box'>
                             <div className="img"><img src={img6} alt="" /></div>
-                            <div className='name'>Binola</div>
+                            <div className='name'>बिनोला</div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='one-box'>
                             <div className="img"><img src={img7} alt="" /></div>
-                            <div className='name'>Anaj</div>
+                            <div className='name'>अनाज</div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='one-box'>
                             <div className="img"><img src={img8} alt="" /></div>
-                            <div className='name'>Churi</div>
+                            <div className='name'>चूरी</div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='one-box'>
                             <div className="img"><img src={img9} alt="" /></div>
-                            <div className='name'>Supplements</div>
+                            <div className='name'>अनुपूरकों</div>
+                            {/* supplements */}
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='one-box'>
                             <div className="img"><img src={img10} alt="" /></div>
-                            <div className='name'>Chilka</div>
+                            <div className='name'>चिल्का</div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='one-box'>
                             <div className="img"><img src={img11} alt="" /></div>
-                            <div className='name'>Mp wheat</div>
+                            <div className='name'>एमपी गेहूं</div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='one-box'>
                             <div className="img"><img src={img12} alt="" /></div>
-                            <div className='name'>Ganderi Khal</div>
+                            <div className='name'>गंडेरी खल</div>
                         </div>
                     </SwiperSlide>
                 </Swiper>

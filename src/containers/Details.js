@@ -11,7 +11,6 @@ function Details() {
         <li className='list-item'>About</li>
         <li className='list-item' onClick={(e) => navigate("/Shop")}>Shop</li>
         <li className='list-item'>Contact</li>
-        {/* <li>Home</li> */}
       </ul>
     </div>
   )

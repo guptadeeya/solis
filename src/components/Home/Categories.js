@@ -3,7 +3,7 @@ import CategoryCard from './CategoryCard';
 import '../css/Categories.css'
 
 const Categories = () => {
-    const categories = ['Solis 10000', 'Solis 3000', 'कच्ची बिनौला खल', 'सरसों खल'];
+    const categories = ['सोलिस 10000', 'सोलिस 3000', 'कच्ची बिनौला खल', 'सरसों खल'];
 
     return (
       <div className="Categories-container">

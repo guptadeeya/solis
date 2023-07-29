@@ -43,6 +43,7 @@
     font-size: 22px;
     font-family: sans-serif;
     font-weight: bold;
+    color: darkgreen;
 }
 
 @media (max-width: 768px){
