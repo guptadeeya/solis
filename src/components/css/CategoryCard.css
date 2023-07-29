@@ -9,6 +9,9 @@
     margin: 10px;
     max-width: 500px;
     text-align: center;
+    width: 100px; /* Set the desired width */
+    height: 140px; /* Set the desired height */
+    text-align: center;
   }
   
   .category-card img {
@@ -17,8 +20,11 @@
     object-fit: cover;
     border-radius: 50px;
   }
-  
-  .category-card h3 {
+
+  .category-name{
     margin-top: 10px;
+    color: green;
+    font-weight: bold;
   }
+  
   

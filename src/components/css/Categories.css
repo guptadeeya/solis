@@ -1,3 +1,7 @@
+.Categories-container{
+  padding-bottom: 10%;
+}
+
 .category-container {
     display: flex;
     flex-wrap: wrap;
@@ -8,6 +12,18 @@
 .Category-heading{
   font-size: 27px;
   color: green;
-  padding-top: 5%;
   font-weight: bold;
+}
+
+.Categories-heading-row{
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 4%;
+}
+
+.view_all{
+  cursor: pointer;
+  text-decoration: underline;
+  color: green;
+  padding-top: 2%;
 }
