@@ -13,26 +13,21 @@ function App() {
       {/* navbar - coupon area */}
       <Navbar />
 
-      {/* header */}
+      {/* header - Search input area*/}
       <Header />
 
-      {/* Details */}
+      {/* Details - home/about/contact*/}
       <Details />
 
-      {/* <Nav/> */}
-
-      {/* Items-categories */}
+      {/* Items - automatic roduct slider*/}
       <Items />
 
-      {/* Carousal*/}
+      {/* Carousal - 2 images*/}
       <Carousal />
 
+      {/* Top categories section */}
       <Categories />
 
-
-{/* ************************************************** */}
-      {/* <ProductSlider/> */}
-      {/* <Nav/> */}
     </div>
   );
 }
