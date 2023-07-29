@@ -1,25 +1,33 @@
 import React, { useState } from "react";
-import { Accordion, AccordionSummary, AccordionDetails, Typography, Avatar } from "@mui/material";
+import { Accordion, AccordionSummary, AccordionDetails, Typography } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import SubCategory from "./SubCategory";
+import "../css/ShopCategory.css"; // Import the CSS file for custom styling
 
-const Category = ({ title, subcategories }) => {
+const Category = ({ title, subcategories, imageSrc }) => {
   const [expanded, setExpanded] = useState(false);
 
   const toggleExpand = () => {
     setExpanded((prevExpanded) => !prevExpanded);
   };
 
-  const categoryImage = `/images/category-${title.toLowerCase().replace(/\s+/g, '-')}.jpg`;
-
   return (
     <Accordion expanded={expanded} onChange={toggleExpand} className="category">
       <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
-        <Avatar alt={title} src={categoryImage} sx={{ width: 60, height: 60 }} />
-        <Typography variant="h6">{title}</Typography>
+        <div className="category-header">
+          <div className="category-image-container">
+            <img alt={title} src={imageSrc} className="category-image" />
+          </div>
+          <Typography variant="h5" className="category-title">{title}</Typography>
+        </div>
       </AccordionSummary>
       <AccordionDetails>
-        <SubCategory subcategories={subcategories} />
+        <div className="subcategory-list">
+          {subcategories.map((subcategory, index) => (
+            <div key={index} className="subcategory-item">
+              <Typography variant="h6">{subcategory.name}</Typography>
+            </div>
+          ))}
+        </div>
       </AccordionDetails>
     </Accordion>
   );
