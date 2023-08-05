@@ -9,14 +9,12 @@
 
 .feature{
     display: flex;
-    flex-direction: row;
-    margin: 20px;
-    justify-content: space-between;
+    margin: 0% 0% 5%;
 }
 
 .line{
     font-size: 22px;
-    color: darkgreen;
+    color: green;
     font-style: italic;
     font-weight: bold;
     margin-left: 10px;
@@ -38,8 +36,12 @@
     }
 
     .icon{
-        height: 70px;
-        width: 80px;
-        border-radius: 120px;
+        border-radius: 50%;
+        max-width: 100%;
+    }
+
+    .line{
+        font-size: 16px;
+        max-width: 100%;
     }
 }
