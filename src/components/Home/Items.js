@@ -45,7 +45,7 @@ function Items() {
                     <SwiperSlide>
                     <Link to="/shop" className="no-underline">
                         <div className='one-box'>
-                            <div className="img"> <img src={img2} alt="" /> </div>
+                            <div className="img"> <img src={img2} alt="" /></div>
                             <div className='name'>गंडेरी खल</div>
                         </div>
                         </Link>
