@@ -19,7 +19,7 @@ function Features() {
 
             <div className='feature'>
                 <div><img className='icon' src = {discount} alt='Discount'/></div>
-                <div className='line'>शानदार डिस्काउंट और कैशबैक ऑफर</div>
+                <div className='line'>शानदार डिस्काउंट</div>
             </div>
         </div>
     )

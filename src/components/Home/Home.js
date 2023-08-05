@@ -6,6 +6,7 @@ import Items from "../../components/Home/Items";
 import Carousal from "../../components/Home/Carousal";
 import Categories from "../../components/Home/Categories";
 import Features from "../../components/Home/Features"
+import Footer from '../../containers/Footer'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Carousal />
       <Categories />
       <Features/>
+      <Footer />
     </div>
   );
 };

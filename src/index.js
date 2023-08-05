@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faShoppingBasket, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// Add the FontAwesome icons to the library
+library.add(faShoppingBasket, faMagnifyingGlass);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
