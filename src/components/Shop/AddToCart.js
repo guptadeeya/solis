@@ -1,18 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "../css/AddToCart.css";
 
-const AddToCartPage = ({ cartItems }) => {
+const AddToCart = () => {
+  // State to keep track of cart items
+  const [cartItems, setCartItems] = useState([]);
+
+  // Retrieve cart items from localStorage on component mount
+  useEffect(() => {
+    const storedCartItems = JSON.parse(localStorage.getItem("cartItems"));
+    if (storedCartItems) {
+      setCartItems(storedCartItems);
+    }
+  }, []);
+
   return (
-    <div>
-      <h1>My Cart</h1>
+    <div className="cart-container">
+      <h2>My Cart</h2>
       {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <p>Your cart is empty</p>
       ) : (
         <ul>
-          {cartItems.map((item) => (
-            <li key={item.id}>
-              <p>{item.name}</p>
-              <p>Price: ${item.price}</p>
-              {/* Add more details about the item if needed */}
+          {cartItems.map((item, index) => (
+            <li key={index}>
+              <div className="cart-item">
+                <img src={item.image} alt={item.name} />
+                <div>
+                  <p>{item.name}</p>
+                  <p>${item.price}</p>
+                </div>
+              </div>
             </li>
           ))}
         </ul>
@@ -21,4 +37,10 @@ const AddToCartPage = ({ cartItems }) => {
   );
 };
 
-export default AddToCartPage;
+export default AddToCart;
+
+
+
+
+
+

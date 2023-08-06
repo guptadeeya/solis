@@ -4,6 +4,7 @@ import "./App.css";
 import Shop from "./components/Shop/Shop";
 import Home from "./components/Home/Home";
 import ProductPage from './components/Shop/ProductPage'
+import AddToCart from './components/Shop/AddToCart'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/products/:subcategoryName" element={<ProductPage />} />
+          <Route path="/cart" element={<AddToCart />} />
         </Routes>
       </div>
     </Router>

@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "../css/ProductPage.css";
 import Navbar from "../../containers/Navbar";
 import Header from "../../containers/Header";
-import Details from '../../containers/Details'
-import img1 from '../../images/img-1.png'
+import Details from "../../containers/Details";
+import img1 from "../../images/img-1.png";
 
 const ProductPage = () => {
   const { subcategoryName } = useParams();
-    // Use the useNavigate hook to get the navigate function
-    //const navigate = useNavigate();
 
   // Replace this with your actual logic to fetch products related to the subcategoryName
   // For demonstration purposes, we will display dummy product data.
@@ -30,8 +28,6 @@ const ProductPage = () => {
   const handleAddToCart = (product) => {
     setCartItems((prevCartItems) => [...prevCartItems, product]);
     setShowSuccessPopup(true); // Show the success popup
-    // Navigate to the AddToCartPage
-    //navigate("/cart");
   };
 
   useEffect(() => {
