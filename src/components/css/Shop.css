@@ -26,7 +26,8 @@ h1 {
 
 /* New styles for accordion */
 .MuiAccordion-root {
-  background-image: linear-gradient(to bottom, rgba(76, 175, 80, 0.8), rgba(33, 150, 243, 0.8)); /* Replace with the background image URL */
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 35%, rgba(86,200,126,1) 100%);
   background-size: cover;
   color: #fff;
   margin-bottom: 20px;
@@ -61,3 +62,56 @@ h1 {
 .MuiListItemText-root {
   margin-left: 16px;
 }
+
+/* ... Other styles ... */
+
+/* New styles for accordion */
+.MuiAccordion-root {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 35%,
+    rgba(86, 200, 126, 1) 100%
+  );
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.MuiAccordionSummary-content {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.MuiAccordionSummary-content .MuiAvatar-root {
+  margin-right: 12px;
+  height: 40px; /* Set a fixed height for the avatar image */
+  width: 40px; /* Set a fixed width for the avatar image */
+}
+
+.MuiAccordionSummary-expandIconWrapper {
+  margin-left: auto;
+}
+
+.MuiAccordionDetails-root {
+  padding: 0;
+}
+
+.MuiList-root {
+  width: 100%;
+  padding: 0;
+}
+
+.MuiListItem-root {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  display: flex; /* Make the list items a flex container */
+  align-items: center; /* Vertically center the content */
+}
+
+.MuiListItemText-root {
+  margin-left: 16px;
+}
+
+/* ... Other styles ... */
+
