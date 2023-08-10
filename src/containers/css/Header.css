@@ -4,12 +4,14 @@
     background: linear-gradient( rgb(40, 77, 40), rgb(88, 201, 88));
     display: flex;
     justify-content: space-between;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .logo{
     display: flex;
     flex-direction: column;
     margin-left: 25px;
+    justify-content: center;
 }
 
 .solis{
@@ -32,7 +34,6 @@
 .search-icon{
    color: white;
    font-size: 20px;
-   margin-top: 17%;
    padding: 2%;
 }
 
@@ -106,7 +107,7 @@
         height: 100px;
     }
     .logo{
-        margin-left: 5px;
+        margin-left: 15px;
     }
 
     .solis{
@@ -114,10 +115,6 @@
     }
     .cattle-feed{
         font-size: 12px;
-    }
-
-    .search{
-        margin-top: 17px;
     }
 
     .search-input{

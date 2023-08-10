@@ -1,0 +1,57 @@
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 1rem;
+    color: Green;
+  }
+
+  .form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: slideIn 0.5s forwards;
+  }
+  
+  .form input,
+  .form textarea {
+    width: 90%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    background-color: Green;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+
+  .contact-form p.error {
+    color: red;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    animation: fadeInAndUp 0.3s ease forwards;
+  }
+
+  .contact-form p.success {
+    color: green;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    animation: fadeInAndUp 0.3s ease forwards;
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      /* transform: translateY(0); */
+    }
+  }

@@ -1,0 +1,28 @@
+/* WhatsAppIcon.css */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other content */
+  
+    /* Additional styling for the icon */
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .whatsapp-icon-img{
+    height: 40px;
+  }
+  
+  /* Media Query for Mobile View */
+  @media (max-width: 767px) {
+    .whatsapp-icon {
+      bottom: 60px; /* Adjust as needed for mobile */
+    }
+  }
+  

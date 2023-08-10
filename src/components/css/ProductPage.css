@@ -1,139 +1,100 @@
 /* ProductPage.css */
 
-.product-page {
+/* Container for the entire product page */
+.product-page{
   padding: 20px;
 }
 
+/* Styling for the product cards */
 .product-cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Show two cards per row by default */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-}
-
-/* Media query to show two cards per row on mobile */
-@media screen and (min-width: 480px) {
-  .product-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Media query to show four cards per row on laptops */
-@media screen and (min-width: 1024px) {
-  .product-cards {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  margin-top: 20px;
 }
 
 .product-card {
   background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  padding: 10px; /* Adjust the padding to make the cards smaller */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
-
-  /* Use flexbox to make the card and buttons adjust according to image width */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 }
 
 .product-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .product-image {
   width: 100%;
-  max-width: 150px; /* Limit the maximum width of the image to make the card smaller */
-  max-height: 100px; /* Limit the maximum height of the image to make the card smaller */
+  height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+}
+
+.product-details {
+  padding: 20px;
+}
+
+.product-name {
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-.product-card h3 {
-  font-size: 16px; /* Reduce the font size to make the card smaller */
-  margin: 10px 0;
+.product-price {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
 }
 
-.product-card p {
-  font-size: 14px; /* Reduce the font size to make the card smaller */
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.product-card .buttons {
-  /* Adjust the width of the buttons according to the image width */
-  width: 100%;
+.buttons {
   display: flex;
-  flex-direction: column; /* Display buttons in a column for mobile view */
-  align-items: center; /* Align buttons in the center for mobile view */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e0e0e0;
 }
 
-.product-card .buttons button {
-  padding: 8px 16px; /* Adjust the padding to make the buttons smaller */
-  font-size: 14px; /* Reduce the font size to make the buttons smaller */
-  color: #fff;
+.add-to-cart-button,
+.buy-now-button {
+  padding: 8px 16px;
+  font-size: 0.9rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-  margin-bottom: 8px; /* Add margin between buttons for mobile view */
-  display: flex; /* Align icons with button text */
-  align-items: center; /* Align icons with button text */
-  justify-content: center; /* Align icons with button text */
+  transition: background-color 0.2s, color 0.2s;
 }
 
-/* Style for "Add to Cart" button */
-.product-card .buttons .add-to-cart-button {
-  background-color: #007bff;
+.add-to-cart-button:hover,
+.buy-now-button:hover {
+  background-color: #4caf50;
+  color: #fff;
 }
 
-/* Style for "Buy Now" button */
-.product-card .buttons .buy-now-button {
-  background-color: #28a745;
-}
-
-/* Hover effect */
-.product-card .buttons button:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
-
-/* Add the styles for the success popup */
+/* Success Popup Styles */
 .success-popup {
   position: fixed;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  border-radius: 8px;
-  visibility: hidden;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   opacity: 0;
-  transition: visibility 0s, opacity 0.3s ease-in-out;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 .success-popup.show {
-  visibility: visible;
   opacity: 1;
+  transform: translateY(0);
 }
 
-/* Additional styles for mobile view */
-@media screen and (max-width: 480px) {
-  .product-card {
-    padding: 8px; /* Adjust the padding for mobile view */
-  }
-
-  .product-card h3 {
-    font-size: 14px; /* Reduce the font size for mobile view */
-  }
-
-  .product-card p {
-    font-size: 12px; /* Reduce the font size for mobile view */
-  }
-
-  .product-card .buttons button {
-    padding: 6px 12px; /* Adjust the padding for mobile view */
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .product-cards {
+    grid-template-columns: 1fr;
   }
 }
