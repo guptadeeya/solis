@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./css/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass, faShoppingBasket } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+// import {faShoppingBasket } from "@fortawesome/free-solid-svg-icons";
 
 const Header = ({ cartItemCount }) => {
   return (
@@ -23,8 +24,7 @@ const Header = ({ cartItemCount }) => {
         <FontAwesomeIcon className="search-icon" icon={faMagnifyingGlass} />
       </div>
 
-      <div className="cart">
-        {/* Use the Link component to navigate to the cart page */}
+      {/* <div className="cart">
         <Link to="/cart" className="basket-button">
           {cartItemCount > 0 && (
             <div className="cart-notification">{cartItemCount}</div>
@@ -32,7 +32,7 @@ const Header = ({ cartItemCount }) => {
           <FontAwesomeIcon className="basket-icon" icon={faShoppingBasket} />
           <div className="my-cart">मेरी टोकरी</div>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
