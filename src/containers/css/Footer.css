@@ -3,7 +3,7 @@
 .footer {
     background-color: #28a745; /* Green color */
     color: #fff; /* White text color */
-    padding: 20px;
+    padding: 22px;
     text-align: center;
   }
   
@@ -48,7 +48,8 @@
   .social-icons {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin:10px;
+    /* margin-bottom: 5px; */
   }
   
   .social-icons a {

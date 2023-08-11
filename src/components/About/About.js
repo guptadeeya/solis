@@ -2,14 +2,15 @@ import React from "react";
 import "./css/About.css";
 import cattleImage from "../../images/Carousal-1.png"; // Import your image
 import Header from "../../containers/Header";
-import Navbar from "../../containers/Navbar";
+// import Navbar from "../../containers/Navbar";
 import Footer from "../../containers/Footer";
 import Details from "../../containers/Details";
+import WhatsAppIcon from "../Home/WhatsappIcon";
 
 const AboutContent = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Header />
       <Details />
 
@@ -27,6 +28,7 @@ const AboutContent = () => {
           <img src={cattleImage} alt="Cattle" />
         </div>
       </section>
+      <WhatsAppIcon />
       <Footer />
     </>
   );

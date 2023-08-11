@@ -19,6 +19,7 @@
     font-weight: bold;
     font-family: sans-serif;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .list-item:hover{

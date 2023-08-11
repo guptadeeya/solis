@@ -1,10 +1,11 @@
 import React from "react";
 import "../css/Shop.css";
-import Navbar from "../../containers/Navbar";
+// import Navbar from "../../containers/Navbar";
 import Header from "../../containers/Header";
 import Details from "../../containers/Details";
 import Category from "./Category";
 import img1 from '../../images/img-2.png'
+import WhatsAppIcon from "../Home/WhatsappIcon"
 
 function Shop() {
   const categories = [
@@ -24,7 +25,7 @@ function Shop() {
         { name: "Subcategory 2-2"},
         // Add more subcategories for Category 2
       ],
-      imageSrc: "/images/category-2.jpg", // Provide the image source for Category 2
+      imageSrc: img1, // Provide the image source for Category 2
     },
     {
       title: "Category 3",
@@ -42,7 +43,7 @@ function Shop() {
         { name: "Subcategory 2-2"},
         // Add more subcategories for Category 2
       ],
-      imageSrc: "/images/category-2.jpg", // Provide the image source for Category 2
+      imageSrc: img1, // Provide the image source for Category 2
     },
     {
       title: "Category 5",
@@ -58,9 +59,10 @@ function Shop() {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Header />
       <Details />
+      <WhatsAppIcon/>
       <div className="Shop">
         <h1>हमारी श्रेणियाँ</h1>
         <div className="category-list">
