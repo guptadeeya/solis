@@ -14,7 +14,7 @@
 .Categories-heading-row{
   display: flex;
   justify-content: space-between;
-  padding: 5% 4%;
+  padding: 5% 4% 0% 4%;
 }
 
 .view_all{

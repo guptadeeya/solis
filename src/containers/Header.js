@@ -20,7 +20,6 @@ const Header = ({ cartItemCount }) => {
           placeholder="आइटम खोजें"
         />
 
-        {/* searchIcon */}
         <FontAwesomeIcon className="search-icon" icon={faMagnifyingGlass} />
       </div>
 

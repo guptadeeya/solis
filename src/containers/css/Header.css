@@ -29,12 +29,14 @@
 .search{
     display: flex;
     flex-direction: row;
+    padding-right: 50px;
 }
 
 .search-icon{
    color: white;
    font-size: 20px;
    padding: 2%;
+   margin-top: 40px;
 }
 
 .basket-icon{
@@ -115,6 +117,10 @@
     }
     .cattle-feed{
         font-size: 12px;
+    }
+
+    .search{
+        padding-right: 10px;
     }
 
     .search-input{

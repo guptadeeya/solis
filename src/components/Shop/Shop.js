@@ -3,6 +3,7 @@ import "../css/Shop.css";
 // import Navbar from "../../containers/Navbar";
 import Header from "../../containers/Header";
 import Details from "../../containers/Details";
+import Footer from "../../containers/Footer";
 import Category from "./Category";
 import img1 from '../../images/img-2.png'
 import WhatsAppIcon from "../Home/WhatsappIcon"
@@ -76,6 +77,7 @@ function Shop() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

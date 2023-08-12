@@ -27,7 +27,7 @@ h1 {
 /* New styles for accordion */
 .MuiAccordion-root {
   background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,1) 35%, rgba(86,200,126,1) 100%);
+  background: radial-gradient(circle, rgba(255,255,255,1) 35%, green 100%);
   background-size: cover;
   color: #fff;
   margin-bottom: 20px;
@@ -71,7 +71,7 @@ h1 {
   background: radial-gradient(
     circle,
     rgba(255, 255, 255, 1) 35%,
-    rgba(86, 200, 126, 1) 100%
+    green 100%
   );
   background-size: cover;
   color: #fff;

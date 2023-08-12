@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "../css/ProductPage.css";
-import Navbar from "../../containers/Navbar";
 import Header from "../../containers/Header";
 import Details from "../../containers/Details";
+import Footer from "../../containers/Footer";
+import WhatsAppIcon from "../Home/WhatsappIcon"
 import img1 from "../../images/img-1.png";
 
 const ProductPage = () => {
@@ -55,7 +56,6 @@ const ProductPage = () => {
 
   return (
     <div>
-      <Navbar />
       <Header cartItemCount={cartItems.length} />
       <Details />
       <div className="product-page">
@@ -64,23 +64,17 @@ const ProductPage = () => {
           {products.map((product) => (
             <div key={product.id} className="product-card">
               <img
-                src={product.image}
+                src={product.image} // Use imported images
                 alt={product.name}
                 className="product-image"
               />
               <h3>{product.name}</h3>
               <p>Price: ${product.price}</p>
-              <div className="buttons">
-                <button
-                  className="add-to-cart-button"
-                  onClick={() => handleAddToCart(product)}
-                >
-                  <i className="fa fa-shopping-cart"></i> Add to Cart
-                </button>
-                <button className="buy-now-button">
-                  <i className="fa fa-credit-card"></i> Buy Now
-                </button>
-              </div>
+              {/* Remove the Add to Cart button */}
+              {/* You can still keep the Buy Now button or modify the layout as needed */}
+              <button className="buy-now-button">
+                <i className="fa fa-credit-card"></i> Buy Now
+              </button>
             </div>
           ))}
         </div>
@@ -92,6 +86,8 @@ const ProductPage = () => {
           <p>Item added to cart successfully!</p>
         </div>
       )}
+      <WhatsAppIcon />
+      <Footer />
     </div>
   );
 };

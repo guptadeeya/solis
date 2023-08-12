@@ -3,7 +3,7 @@ import "../css/AddToCart.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus, faTrash } from "@fortawesome/free-solid-svg-icons";
 // import { Scrollbars } from 'react-custom-scrollbars-2';
-import { motion } from 'framer-motion'
+// import { motion } from 'framer-motion'
 import { BiMinus, BiPlus } from 'react-icons/bi'
 
 const AddToCart = () => {
@@ -51,7 +51,7 @@ const AddToCart = () => {
                     <FontAwesomeIcon className="plus" icon={faPlus} />
                   </motion.div> */}
 
-                <div className='quantity'>
+                {/* <div className='quantity'>
                   <motion.div whileTap={{ scale: 0.75 }}>
                     <BiMinus className="minus" />
                   </motion.div>
@@ -61,7 +61,7 @@ const AddToCart = () => {
                   <motion.div whileTap={{ scale: 0.75 }}>
                     <BiPlus className="plus" />
                   </motion.div>
-                </div>
+                </div> */}
 
                 <div className="price">
                   Price

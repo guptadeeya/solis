@@ -2,8 +2,8 @@
   border: 1px solid darkgreen;
   width: 70%;
   border-radius: 20px;
-  margin: 50% auto;
   padding: 25px;
+  margin: 10% auto;
 }
 
 .call{
@@ -41,6 +41,12 @@
 .call-icon{
   color: rgb(49, 100, 49);
   font-size: 18px;
+}
+
+@media (max-width: 768px){
+  .contact-us{
+    margin: 22% auto;
+  }
 }
 /* .contact-form {
     max-width: 600px;
